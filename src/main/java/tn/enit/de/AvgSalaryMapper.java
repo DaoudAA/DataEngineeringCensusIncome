@@ -18,7 +18,7 @@ public class AvgSalaryMapper extends Mapper<Object, Text, Text, DoubleWritable> 
             maritalStatus.set(fields[5].trim());
             salary.set(Double.parseDouble(fields[12].trim()));
             context.write(maritalStatus, salary);
-            logger.info("MAPPER: Processing line: " + maritalStatus +" has this salary : "+ salary.toString());
+            //logger.info("MAPPER: Processing line: " + maritalStatus +" has this salary : "+ salary.toString());
         }
     }
 }
