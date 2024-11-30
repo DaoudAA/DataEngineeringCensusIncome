@@ -1,0 +1,23 @@
+2024-11-30 22:36:29,249 [main] ERROR org.apache.hadoop.util.Shell - Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:356)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:371)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:364)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:80)
+	at org.apache.hadoop.security.SecurityUtil.getAuthenticationMethod(SecurityUtil.java:611)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:272)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260)
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:790)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:760)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:633)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.<init>(JobContextImpl.java:72)
+	at org.apache.hadoop.mapreduce.Job.<init>(Job.java:142)
+	at org.apache.hadoop.mapreduce.Job.getInstance(Job.java:185)
+	at org.apache.hadoop.mapreduce.Job.getInstance(Job.java:204)
+	at tn.enit.de.AverageSalaryPerMaritalStatus.main(AverageSalaryPerMaritalStatus.java:17)
+2024-11-30 22:36:29,358 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2024-11-30 22:36:29,392 [main] INFO  tn.enit.de.AverageSalaryPerMaritalStatus - Mapper done
+2024-11-30 22:36:29,393 [main] INFO  tn.enit.de.AverageSalaryPerMaritalStatus - Combiner done
+2024-11-30 22:36:29,393 [main] INFO  tn.enit.de.AverageSalaryPerMaritalStatus - reducer done
+2024-11-30 22:36:29,456 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+2024-11-30 22:36:29,457 [main] INFO  org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
