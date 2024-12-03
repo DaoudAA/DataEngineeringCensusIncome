@@ -1,0 +1,376 @@
+2024-12-03 10:57:28,265 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2024-12-03 10:57:28,325 [main] INFO  tn.enit.computerhard.ReliabilityPerVendor - Mapper done
+2024-12-03 10:57:28,325 [main] INFO  tn.enit.computerhard.ReliabilityPerVendor - Combiner done
+2024-12-03 10:57:28,326 [main] INFO  tn.enit.computerhard.ReliabilityPerVendor - reducer done
+2024-12-03 10:57:28,451 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+2024-12-03 10:57:28,452 [main] INFO  org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+2024-12-03 10:57:28,585 [main] WARN  org.apache.hadoop.mapreduce.JobResourceUploader - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2024-12-03 10:57:28,587 [main] WARN  org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2024-12-03 10:57:28,601 [main] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2024-12-03 10:57:28,646 [main] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2024-12-03 10:57:28,856 [main] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local963446904_0001
+2024-12-03 10:57:28,967 [main] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+2024-12-03 10:57:28,967 [main] INFO  org.apache.hadoop.mapreduce.Job - Running job: job_local963446904_0001
+2024-12-03 10:57:28,970 [Thread-14] INFO  org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+2024-12-03 10:57:28,973 [Thread-14] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2024-12-03 10:57:28,974 [Thread-14] INFO  org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2024-12-03 10:57:28,997 [Thread-14] INFO  org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+2024-12-03 10:57:28,997 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local963446904_0001_m_000000_0
+2024-12-03 10:57:29,028 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2024-12-03 10:57:29,041 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : [ ]
+2024-12-03 10:57:29,044 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - Processing split: file:/home/bigdata/IdeaProjects/DataEngineeringCensusIncome/src/main/resources/input/machine.data:0+8726
+2024-12-03 10:57:29,087 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 26214396(104857584)
+2024-12-03 10:57:29,087 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 100
+2024-12-03 10:57:29,087 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - soft limit at 83886080
+2024-12-03 10:57:29,087 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 104857600
+2024-12-03 10:57:29,087 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - kvstart = 26214396; length = 6553600
+2024-12-03 10:57:29,091 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-12-03 10:57:29,094 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: adviser, Reliability: -1.0
+2024-12-03 10:57:29,094 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: amdahl, Reliability: 16.0
+2024-12-03 10:57:29,094 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: amdahl, Reliability: -33.0
+2024-12-03 10:57:29,094 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: amdahl, Reliability: -81.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: amdahl, Reliability: 0.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: amdahl, Reliability: 28.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: amdahl, Reliability: -14.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: amdahl, Reliability: 108.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: amdahl, Reliability: -113.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: amdahl, Reliability: -94.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: apollo, Reliability: 15.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: apollo, Reliability: 16.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: basf, Reliability: 22.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: basf, Reliability: 21.0
+2024-12-03 10:57:29,095 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: bti, Reliability: -5.0
+2024-12-03 10:57:29,096 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: bti, Reliability: -29.0
+2024-12-03 10:57:29,096 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: burroughs, Reliability: -4.0
+2024-12-03 10:57:29,096 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: burroughs, Reliability: -1.0
+2024-12-03 10:57:29,096 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: burroughs, Reliability: 9.0
+2024-12-03 10:57:29,096 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: burroughs, Reliability: -4.0
+2024-12-03 10:57:29,096 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: burroughs, Reliability: -5.0
+2024-12-03 10:57:29,096 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: burroughs, Reliability: -6.0
+2024-12-03 10:57:29,096 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: burroughs, Reliability: 21.0
+2024-12-03 10:57:29,096 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: burroughs, Reliability: 31.0
+2024-12-03 10:57:29,097 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: c.r.d, Reliability: -5.0
+2024-12-03 10:57:29,097 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: c.r.d, Reliability: 48.0
+2024-12-03 10:57:29,097 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: c.r.d, Reliability: 5.0
+2024-12-03 10:57:29,097 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: c.r.d, Reliability: 5.0
+2024-12-03 10:57:29,097 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: c.r.d, Reliability: 49.0
+2024-12-03 10:57:29,097 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: c.r.d, Reliability: 0.0
+2024-12-03 10:57:29,097 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cdc, Reliability: 172.0
+2024-12-03 10:57:29,097 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cdc, Reliability: 266.0
+2024-12-03 10:57:29,097 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cdc, Reliability: -42.0
+2024-12-03 10:57:29,098 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cdc, Reliability: -11.0
+2024-12-03 10:57:29,098 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cdc, Reliability: -32.0
+2024-12-03 10:57:29,098 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cdc, Reliability: 72.0
+2024-12-03 10:57:29,098 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cdc, Reliability: -3.0
+2024-12-03 10:57:29,098 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cdc, Reliability: 0.0
+2024-12-03 10:57:29,098 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cdc, Reliability: 27.0
+2024-12-03 10:57:29,098 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cambex, Reliability: -4.0
+2024-12-03 10:57:29,098 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cambex, Reliability: -5.0
+2024-12-03 10:57:29,099 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cambex, Reliability: -34.0
+2024-12-03 10:57:29,099 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cambex, Reliability: -22.0
+2024-12-03 10:57:29,099 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: cambex, Reliability: -14.0
+2024-12-03 10:57:29,099 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dec, Reliability: 18.0
+2024-12-03 10:57:29,099 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dec, Reliability: 31.0
+2024-12-03 10:57:29,099 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dec, Reliability: 0.0
+2024-12-03 10:57:29,099 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dec, Reliability: -8.0
+2024-12-03 10:57:29,099 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dec, Reliability: 4.0
+2024-12-03 10:57:29,099 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dec, Reliability: 24.0
+2024-12-03 10:57:29,100 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dg, Reliability: -10.0
+2024-12-03 10:57:29,100 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dg, Reliability: 5.0
+2024-12-03 10:57:29,100 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dg, Reliability: 66.0
+2024-12-03 10:57:29,100 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dg, Reliability: 0.0
+2024-12-03 10:57:29,100 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dg, Reliability: -4.0
+2024-12-03 10:57:29,100 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dg, Reliability: 4.0
+2024-12-03 10:57:29,100 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: dg, Reliability: 29.0
+2024-12-03 10:57:29,100 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: formation, Reliability: -22.0
+2024-12-03 10:57:29,101 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: formation, Reliability: -20.0
+2024-12-03 10:57:29,101 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: formation, Reliability: -14.0
+2024-12-03 10:57:29,101 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: formation, Reliability: -18.0
+2024-12-03 10:57:29,101 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: formation, Reliability: -12.0
+2024-12-03 10:57:29,101 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: four-phase, Reliability: 17.0
+2024-12-03 10:57:29,101 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: gould, Reliability: 69.0
+2024-12-03 10:57:29,101 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: gould, Reliability: 31.0
+2024-12-03 10:57:29,101 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: gould, Reliability: 102.0
+2024-12-03 10:57:29,101 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: hp, Reliability: -1.0
+2024-12-03 10:57:29,101 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: hp, Reliability: 6.0
+2024-12-03 10:57:29,102 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: hp, Reliability: 4.0
+2024-12-03 10:57:29,102 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: hp, Reliability: -1.0
+2024-12-03 10:57:29,102 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: hp, Reliability: 15.0
+2024-12-03 10:57:29,102 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: hp, Reliability: 10.0
+2024-12-03 10:57:29,102 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: hp, Reliability: 2.0
+2024-12-03 10:57:29,102 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: harris, Reliability: 13.0
+2024-12-03 10:57:29,102 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: harris, Reliability: 19.0
+2024-12-03 10:57:29,102 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: harris, Reliability: -2.0
+2024-12-03 10:57:29,103 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: harris, Reliability: 18.0
+2024-12-03 10:57:29,103 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: harris, Reliability: 3.0
+2024-12-03 10:57:29,103 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: harris, Reliability: 18.0
+2024-12-03 10:57:29,103 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: harris, Reliability: 31.0
+2024-12-03 10:57:29,103 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: -7.0
+2024-12-03 10:57:29,103 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: 8.0
+2024-12-03 10:57:29,103 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: -35.0
+2024-12-03 10:57:29,103 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: -4.0
+2024-12-03 10:57:29,103 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: -3.0
+2024-12-03 10:57:29,104 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: 1.0
+2024-12-03 10:57:29,104 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: 11.0
+2024-12-03 10:57:29,104 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: 3.0
+2024-12-03 10:57:29,104 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: -41.0
+2024-12-03 10:57:29,104 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: 9.0
+2024-12-03 10:57:29,104 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: -40.0
+2024-12-03 10:57:29,104 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: 8.0
+2024-12-03 10:57:29,104 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: honeywell, Reliability: -10.0
+2024-12-03 10:57:29,105 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 50.0
+2024-12-03 10:57:29,105 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 66.0
+2024-12-03 10:57:29,105 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 104.0
+2024-12-03 10:57:29,105 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 115.0
+2024-12-03 10:57:29,105 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 57.0
+2024-12-03 10:57:29,105 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 72.0
+2024-12-03 10:57:29,105 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -9.0
+2024-12-03 10:57:29,105 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 3.0
+2024-12-03 10:57:29,105 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 10.0
+2024-12-03 10:57:29,106 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -11.0
+2024-12-03 10:57:29,106 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -7.0
+2024-12-03 10:57:29,106 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -4.0
+2024-12-03 10:57:29,106 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 4.0
+2024-12-03 10:57:29,106 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -13.0
+2024-12-03 10:57:29,106 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -7.0
+2024-12-03 10:57:29,106 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -6.0
+2024-12-03 10:57:29,106 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -8.0
+2024-12-03 10:57:29,106 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -6.0
+2024-12-03 10:57:29,106 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 9.0
+2024-12-03 10:57:29,107 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 9.0
+2024-12-03 10:57:29,107 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 3.0
+2024-12-03 10:57:29,107 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 8.0
+2024-12-03 10:57:29,107 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 0.0
+2024-12-03 10:57:29,107 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -10.0
+2024-12-03 10:57:29,107 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -2.0
+2024-12-03 10:57:29,107 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -10.0
+2024-12-03 10:57:29,107 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 1.0
+2024-12-03 10:57:29,107 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -1.0
+2024-12-03 10:57:29,107 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 17.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -6.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: -2.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ibm, Reliability: 0.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ipl, Reliability: -3.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ipl, Reliability: 1.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ipl, Reliability: 12.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ipl, Reliability: -12.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ipl, Reliability: -2.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ipl, Reliability: 8.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: magnuson, Reliability: -21.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: magnuson, Reliability: -20.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: magnuson, Reliability: -14.0
+2024-12-03 10:57:29,108 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: magnuson, Reliability: -35.0
+2024-12-03 10:57:29,109 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: magnuson, Reliability: -34.0
+2024-12-03 10:57:29,109 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: magnuson, Reliability: -23.0
+2024-12-03 10:57:29,109 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: microdata, Reliability: -3.0
+2024-12-03 10:57:29,109 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 4.0
+2024-12-03 10:57:29,109 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 11.0
+2024-12-03 10:57:29,109 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 9.0
+2024-12-03 10:57:29,109 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 7.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 9.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: -20.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: -9.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: -33.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: -24.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: -8.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 23.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 57.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 88.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 11.0
+2024-12-03 10:57:29,110 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 100.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 84.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 63.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: 59.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nas, Reliability: -93.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -11.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -9.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -9.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -14.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -17.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -13.0
+2024-12-03 10:57:29,111 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -20.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -32.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -29.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: 36.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -42.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: -141.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: ncr, Reliability: 22.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nixdorf, Reliability: 4.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nixdorf, Reliability: 5.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: nixdorf, Reliability: -26.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: perkin-elmer, Reliability: 1.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: perkin-elmer, Reliability: 26.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: perkin-elmer, Reliability: -14.0
+2024-12-03 10:57:29,112 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: prime, Reliability: 5.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: prime, Reliability: 12.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: prime, Reliability: 9.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: prime, Reliability: 17.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: prime, Reliability: 56.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: -13.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: -11.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: -9.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: -8.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: 11.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: 31.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: 8.0
+2024-12-03 10:57:29,113 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: 32.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: 39.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: -10.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: -27.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: siemens, Reliability: 23.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: 14.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: -68.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: -19.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: -34.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: 37.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: -4.0
+2024-12-03 10:57:29,114 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: 172.0
+2024-12-03 10:57:29,115 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: -12.0
+2024-12-03 10:57:29,115 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: -10.0
+2024-12-03 10:57:29,115 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: -6.0
+2024-12-03 10:57:29,115 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: -3.0
+2024-12-03 10:57:29,115 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: 5.0
+2024-12-03 10:57:29,115 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sperry, Reliability: -4.0
+2024-12-03 10:57:29,115 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: sratus, Reliability: 11.0
+2024-12-03 10:57:29,115 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: wang, Reliability: 20.0
+2024-12-03 10:57:29,116 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityMapper - MAPPER: Vendor: wang, Reliability: 20.0
+2024-12-03 10:57:29,117 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2024-12-03 10:57:29,118 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+2024-12-03 10:57:29,118 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - Spilling map output
+2024-12-03 10:57:29,118 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - bufstart = 0; bufend = 2927; bufvoid = 104857600
+2024-12-03 10:57:29,118 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - kvstart = 26214396(104857584); kvend = 26213564(104854256); length = 833/6553600
+2024-12-03 10:57:29,130 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: adviser with local average: -1.0
+2024-12-03 10:57:29,130 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: amdahl with local average: -20.333333333333332
+2024-12-03 10:57:29,130 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: apollo with local average: 15.5
+2024-12-03 10:57:29,131 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: basf with local average: 21.5
+2024-12-03 10:57:29,131 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: bti with local average: -17.0
+2024-12-03 10:57:29,131 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: burroughs with local average: 5.125
+2024-12-03 10:57:29,131 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: c.r.d with local average: 17.0
+2024-12-03 10:57:29,131 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: cambex with local average: -15.8
+2024-12-03 10:57:29,131 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: cdc with local average: 49.888888888888886
+2024-12-03 10:57:29,131 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: dec with local average: 11.5
+2024-12-03 10:57:29,132 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: dg with local average: 12.857142857142858
+2024-12-03 10:57:29,132 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: formation with local average: -17.2
+2024-12-03 10:57:29,132 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: four-phase with local average: 17.0
+2024-12-03 10:57:29,132 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: gould with local average: 67.33333333333333
+2024-12-03 10:57:29,132 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: harris with local average: 14.285714285714286
+2024-12-03 10:57:29,132 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: honeywell with local average: -7.6923076923076925
+2024-12-03 10:57:29,132 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: hp with local average: 5.0
+2024-12-03 10:57:29,133 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: ibm with local average: 13.3125
+2024-12-03 10:57:29,133 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: ipl with local average: 0.6666666666666666
+2024-12-03 10:57:29,133 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: magnuson with local average: -24.5
+2024-12-03 10:57:29,133 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: microdata with local average: -3.0
+2024-12-03 10:57:29,133 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: nas with local average: 17.789473684210527
+2024-12-03 10:57:29,133 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: ncr with local average: -21.46153846153846
+2024-12-03 10:57:29,133 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: nixdorf with local average: -5.666666666666667
+2024-12-03 10:57:29,133 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: perkin-elmer with local average: 4.333333333333333
+2024-12-03 10:57:29,133 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: prime with local average: 19.8
+2024-12-03 10:57:29,134 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: siemens with local average: 5.5
+2024-12-03 10:57:29,134 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: sperry with local average: 5.230769230769231
+2024-12-03 10:57:29,134 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: sratus with local average: 11.0
+2024-12-03 10:57:29,134 [LocalJobRunner Map Task Executor #0] INFO  tn.enit.computerhard.AvgReliabilityCombiner - Combiner: Processing vendor: wang with local average: 20.0
+2024-12-03 10:57:29,135 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+2024-12-03 10:57:29,140 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local963446904_0001_m_000000_0 is done. And is in the process of committing
+2024-12-03 10:57:29,145 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.LocalJobRunner - map
+2024-12-03 10:57:29,145 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local963446904_0001_m_000000_0' done.
+2024-12-03 10:57:29,145 [LocalJobRunner Map Task Executor #0] INFO  org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local963446904_0001_m_000000_0
+2024-12-03 10:57:29,145 [Thread-14] INFO  org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+2024-12-03 10:57:29,147 [Thread-14] INFO  org.apache.hadoop.mapred.LocalJobRunner - Waiting for reduce tasks
+2024-12-03 10:57:29,147 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local963446904_0001_r_000000_0
+2024-12-03 10:57:29,151 [pool-3-thread-1] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2024-12-03 10:57:29,151 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : [ ]
+2024-12-03 10:57:29,158 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.ReduceTask - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@8709c36
+2024-12-03 10:57:29,166 [pool-3-thread-1] INFO  org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - MergerManager: memoryLimit=2608647424, maxSingleShuffleLimit=652161856, mergeThreshold=1721707392, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2024-12-03 10:57:29,168 [EventFetcher for fetching Map Completion Events] INFO  org.apache.hadoop.mapreduce.task.reduce.EventFetcher - attempt_local963446904_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2024-12-03 10:57:29,187 [localfetcher#1] INFO  org.apache.hadoop.mapreduce.task.reduce.LocalFetcher - localfetcher#1 about to shuffle output of map attempt_local963446904_0001_m_000000_0 decomp: 503 len: 507 to MEMORY
+2024-12-03 10:57:29,189 [localfetcher#1] INFO  org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput - Read 503 bytes from map-output for attempt_local963446904_0001_m_000000_0
+2024-12-03 10:57:29,190 [localfetcher#1] INFO  org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - closeInMemoryFile -> map-output of size: 503, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->503
+2024-12-03 10:57:29,195 [EventFetcher for fetching Map Completion Events] INFO  org.apache.hadoop.mapreduce.task.reduce.EventFetcher - EventFetcher is interrupted.. Returning
+2024-12-03 10:57:29,196 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+2024-12-03 10:57:29,196 [pool-3-thread-1] INFO  org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2024-12-03 10:57:29,199 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+2024-12-03 10:57:29,200 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 493 bytes
+2024-12-03 10:57:29,201 [pool-3-thread-1] INFO  org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merged 1 segments, 503 bytes to disk to satisfy reduce memory limit
+2024-12-03 10:57:29,201 [pool-3-thread-1] INFO  org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merging 1 files, 507 bytes from disk
+2024-12-03 10:57:29,201 [pool-3-thread-1] INFO  org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merging 0 segments, 0 bytes from memory into reduce
+2024-12-03 10:57:29,201 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+2024-12-03 10:57:29,201 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 493 bytes
+2024-12-03 10:57:29,202 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+2024-12-03 10:57:29,216 [pool-3-thread-1] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2024-12-03 10:57:29,216 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor adviser has global average reliability: -1.0
+2024-12-03 10:57:29,217 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor amdahl has global average reliability: -20.333333333333332
+2024-12-03 10:57:29,217 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor apollo has global average reliability: 15.5
+2024-12-03 10:57:29,217 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor basf has global average reliability: 21.5
+2024-12-03 10:57:29,218 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor bti has global average reliability: -17.0
+2024-12-03 10:57:29,218 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor burroughs has global average reliability: 5.125
+2024-12-03 10:57:29,218 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor c.r.d has global average reliability: 17.0
+2024-12-03 10:57:29,218 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor cambex has global average reliability: -15.8
+2024-12-03 10:57:29,218 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor cdc has global average reliability: 49.888888888888886
+2024-12-03 10:57:29,218 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor dec has global average reliability: 11.5
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor dg has global average reliability: 12.857142857142858
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor formation has global average reliability: -17.2
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor four-phase has global average reliability: 17.0
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor gould has global average reliability: 67.33333333333333
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor harris has global average reliability: 14.285714285714286
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor honeywell has global average reliability: -7.6923076923076925
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor hp has global average reliability: 5.0
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor ibm has global average reliability: 13.3125
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor ipl has global average reliability: 0.6666666666666666
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor magnuson has global average reliability: -24.5
+2024-12-03 10:57:29,219 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor microdata has global average reliability: -3.0
+2024-12-03 10:57:29,220 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor nas has global average reliability: 17.789473684210527
+2024-12-03 10:57:29,220 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor ncr has global average reliability: -21.46153846153846
+2024-12-03 10:57:29,220 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor nixdorf has global average reliability: -5.666666666666667
+2024-12-03 10:57:29,220 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor perkin-elmer has global average reliability: 4.333333333333333
+2024-12-03 10:57:29,220 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor prime has global average reliability: 19.8
+2024-12-03 10:57:29,220 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor siemens has global average reliability: 5.5
+2024-12-03 10:57:29,220 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor sperry has global average reliability: 5.230769230769231
+2024-12-03 10:57:29,220 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor sratus has global average reliability: 11.0
+2024-12-03 10:57:29,220 [pool-3-thread-1] INFO  tn.enit.computerhard.AvgReliabilityReducer - Reducer: Vendor wang has global average reliability: 20.0
+2024-12-03 10:57:29,221 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local963446904_0001_r_000000_0 is done. And is in the process of committing
+2024-12-03 10:57:29,222 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - 1 / 1 copied.
+2024-12-03 10:57:29,222 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.Task - Task attempt_local963446904_0001_r_000000_0 is allowed to commit now
+2024-12-03 10:57:29,222 [pool-3-thread-1] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local963446904_0001_r_000000_0' to file:/home/bigdata/IdeaProjects/DataEngineeringCensusIncome/src/main/resources/output4/_temporary/0/task_local963446904_0001_r_000000
+2024-12-03 10:57:29,223 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+2024-12-03 10:57:29,223 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local963446904_0001_r_000000_0' done.
+2024-12-03 10:57:29,223 [pool-3-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local963446904_0001_r_000000_0
+2024-12-03 10:57:29,223 [Thread-14] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce task executor complete.
+2024-12-03 10:57:29,970 [main] INFO  org.apache.hadoop.mapreduce.Job - Job job_local963446904_0001 running in uber mode : false
+2024-12-03 10:57:29,971 [main] INFO  org.apache.hadoop.mapreduce.Job -  map 100% reduce 100%
+2024-12-03 10:57:29,972 [main] INFO  org.apache.hadoop.mapreduce.Job - Job job_local963446904_0001 completed successfully
+2024-12-03 10:57:29,979 [main] INFO  org.apache.hadoop.mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=18934
+		FILE: Number of bytes written=563693
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=209
+		Map output records=209
+		Map output bytes=2927
+		Map output materialized bytes=507
+		Input split bytes=162
+		Combine input records=209
+		Combine output records=30
+		Reduce input groups=30
+		Reduce shuffle bytes=507
+		Reduce input records=30
+		Reduce output records=30
+		Spilled Records=60
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=8
+		Total committed heap usage (bytes)=503316480
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=8726
+	File Output Format Counters 
+		Bytes Written=540
